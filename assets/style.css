@@ -1,3 +1,9 @@
+body {
+    background-image: url(./images/wp4034563.webp);
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
 .box {
     vertical-align: top;
     text-align: center;
@@ -6,4 +12,9 @@
 body {
     background-color: red;
     height: 100vh;
+}
+
+.columns {
+    box-sizing: content-box;
+    background-color: yellow;
 }
