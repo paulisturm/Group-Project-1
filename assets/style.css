@@ -1,0 +1,9 @@
+.box {
+    vertical-align: top;
+    text-align: center;
+}
+
+body {
+    background-color: red;
+    height: 100vh;
+}
