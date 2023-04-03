@@ -1,5 +1,5 @@
-User will be able to click a "faceoff" button, which will then present two random Marvel Superheroes. Users will be able to keep track of which side of the page wins more hypothetical matchups in a window below the two characters.
+User will be able to click on the search bar and type in the name of any superhero or villain of their choosing. Upon doing this the user will see the character a small bio how many comics theyve been in and movies.
 
 User Story
 
-As a user I want to be able to pass time with a friend by having disucsion about what superheroes will win in a hypothetical battle. I also want to keep track of how many times the superhero on each side is victorious.
+As a user I want to be able to pass time by searching for my favorite superhero or villian and reading their bio how many comics and movies they have been in.
