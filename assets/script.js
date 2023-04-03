@@ -1,5 +1,6 @@
- 
-      //console.log(passhash);
+
+    //console.log(passhash);
+refs/remotes/origin/main
 
       var apikey = "324637569c8fda463203df55e0b15edc";
 
@@ -10,7 +11,10 @@
       var combinedStr = dstr + pri + pub;
       var passhash = CryptoJS.MD5(combinedStr).toString();
       //console.log(combinedStr, passhash);
-      var url = `http://gateway.marvel.com/v1/public/comics?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
+
+
+      var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
+refs/remotes/origin/main
       fetch(url)
         .then((res) => {
           console.log(res);
@@ -20,5 +24,6 @@
           console.log(json);
         });
 
-        document.getElementById('btn').onclick =
+
    
+refs/remotes/origin/main
