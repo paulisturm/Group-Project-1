@@ -23,11 +23,3 @@ refs/remotes/origin/main
         .then((json) => {
           console.log(json);
         });
-
-<<<<<<< HEAD
-        
-=======
-
-   
-refs/remotes/origin/main
->>>>>>> 5d8b10266b7795864c404ac793c14e46ce2583bd
