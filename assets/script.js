@@ -1,7 +1,4 @@
-
-    //console.log(passhash);
-refs/remotes/origin/main
-
+//console.log(passhash);
       var apikey = "324637569c8fda463203df55e0b15edc";
 
       var d = new Date();
@@ -14,7 +11,12 @@ refs/remotes/origin/main
 
 
       var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
-refs/remotes/origin/main
+
+      var secondapikey = "6813105332038237";
+
+      var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
+
+      
       fetch(url)
         .then((res) => {
           console.log(res);
@@ -24,6 +26,32 @@ refs/remotes/origin/main
           console.log(json);
         });
 
+        fetch(secondurl)
+        .then((res) => {
+            console.log(res);
+            return res.json();
+          })
+          .then((json) => {
+            console.log(json);
+          });
+
+        function toggleActiveState() {
+            this.classList.toggle('active');
+        }
+        var btns = document.querySelectorAll('.btn');
+        [].forEach.call(btns, function(btn) {
+          btn.addEventListener('click', toggleActiveState, false);
+          
+        });
+        
+
+    //    () => {
+           // var character = document.getElementById('search').value
+          //  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}` + results +"results")
+         //   .then(res=> res.json())
+   // .then(result=> console.log("result", result))
+    
+
 
    
-refs/remotes/origin/main
+
