@@ -51,7 +51,3 @@
          //   .then(res=> res.json())
    // .then(result=> console.log("result", result))
     
-
-
-   
-

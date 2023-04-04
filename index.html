@@ -4,48 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marvel-Superhero-Faceoff</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-    />
+    <title>Marvel Comics Character Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"/>
     <style>
-      body {
-        font-family: "Bangers", cursive;
-      }
+      
     </style>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-   
-    <section class="hero">
-      <div class="hero-body has-text-centered">
-        <div class="container">
-          <div class="box">Get ready for faceoff</div>
-        </div>
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <p class="title">
+          Marvel Comics Search
+        </p>
+        <input class="input is-danger" type="text" placeholder="Enter Marvel Character...">
       </div>
     </section>
-    <div class="columns">
-      <div class="tile is-vertical column has-text-centered">
-        First column
-      </div>
-      <div class="box column has-text-centered">Second column</div>
-    </div>
-    <div>
-      <div class="has-text-centered">
-        <button class="button is-text">Search</button>
-        
-      </div>
-    </div>
 
-    <div class="margin-from-bottom">
-      <h2 class="has-text-centered">SCOREBOARD</h2>
-      <div class="box"></div>
+    
+  
+    
+  
+    
+
+      </form>
+      <div id="cards-group"></div>
+
     </div>
+  </div>
+
+  <div class="container" id="contentContainer">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="./assets/script.js"></script>
