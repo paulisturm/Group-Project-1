@@ -3,7 +3,9 @@ body {
     background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  font-family: Bangers, cursive;
 }
+
 .box {
     vertical-align: top;
     text-align: center;
