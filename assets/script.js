@@ -9,20 +9,21 @@ var combinedStr = dstr + pri + pub;
 var passhash = CryptoJS.MD5(combinedStr).toString();
 //console.log(combinedStr, passhash);
 
-var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
+      var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
 
 var secondapikey = "6813105332038237";
 
-var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
+      var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
 
-fetch(url)
-  .then((res) => {
-    console.log(res);
-    return res.json();
-  })
-  .then((json) => {
-    console.log(json);
-  });
+      
+      fetch(url)
+        .then((res) => {
+          console.log(res);
+          return res.json();
+        })
+        .then((json) => {
+          console.log(json);
+        });
 
 fetch(secondurl)
   .then((res) => {
@@ -33,16 +34,19 @@ fetch(secondurl)
     console.log(json);
   });
 
-function toggleActiveState() {
-  this.classList.toggle("active");
-}
-var btns = document.querySelectorAll(".btn");
-[].forEach.call(btns, function (btn) {
-  btn.addEventListener("click", toggleActiveState, false);
-});
+        function toggleActiveState() {
+            this.classList.toggle('active');
+        }
+        var btns = document.querySelectorAll('.btn');
+        [].forEach.call(btns, function(btn) {
+          btn.addEventListener('click', toggleActiveState, false);
+          
+        });
+        
 
-//    () => {
-// var character = document.getElementById('search').value
-//  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}` + results +"results")
-//   .then(res=> res.json())
-// .then(result=> console.log("result", result))
+    //    () => {
+           // var character = document.getElementById('search').value
+          //  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}` + results +"results")
+         //   .then(res=> res.json())
+   // .then(result=> console.log("result", result))
+
