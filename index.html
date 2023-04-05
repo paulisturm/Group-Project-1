@@ -21,55 +21,62 @@
         <body onload="character()">
           <nav class="navbar navbar-expand-lg ">
               <div class="container-fluid">
-                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                      <a class="nav-link" href="Favourites.html">Favourites</a>
+                        <a class="nav-link" href="Favourites.html">Favourites</a>
                     </li>
                   </ul>
       
                 </div>
               </div>
             </nav>
-        <input class="input is-danger" name="name" id="name" type="text" class="form-control character-search-box"s placeholder="Enter Marvel Character..." onkeyup="showCorrespondingHeros()">
-        <div class="column is-one-quarter">
-        </div>
-        <input type="submit" value="Search!" class="button is-dark search-character-button" id="submit">
+            
+    <div class="container">
+        <h1 class="header-main-title">Marvel Comics Character Search</h1>
+        <form id="connectionForm">
+          
+          <div class="form-group">
+            <input class="input is-danger" name="name" id="name" type="text" class="form-control character-search-box"s placeholder="Enter Marvel Character..." onkeyup="showCorrespondingHeros()">
+          </div>
+          <input type="submit" value="Search!" class="button is-dark search-character-button" id="submit">
+        
+        </form>
         <div id="cards-group"></div>
       </div>
-    </section>
-<<<<<<< HEAD
-      <section>
-        <section class="landscape">
-          
-      
-      </section>
     
+    </section>
+    <div>
     <div class="container" id="contentContainer"></div>
   
       <div class="d-flex align-items-center" id="characterSpinnerSection"></div>
       <div class="d-flex align-items-center" id="comicsSpinnerSection"></div>
-=======
 
->>>>>>> f2de73052e3c215355210e817328e079c917ef43
     
   
       <section id="characterSection"></section>
 
       <section id="comicSection"></section> 
   
-    
+      <br>
 
-      </form>
-      <div id="cards-group"></div>
 
     </div>
   </div>
 
-  <div class="container" id="contentContainer">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script src="./assets/script.js"></script>
-  </body>
+
+  <script src="./assets/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.34.3/collect.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+ 
+</body>
+
 </html>
