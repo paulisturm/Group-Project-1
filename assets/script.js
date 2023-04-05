@@ -10,7 +10,7 @@
       //console.log(combinedStr, passhash);
 
 
-      var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`;
+      var url = `https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}`
 
       var secondapikey = "6813105332038237";
 
@@ -25,8 +25,6 @@
         .then((json) => {
           console.log(json);
         });
-<<<<<<< HEAD
-=======
 
         fetch(secondurl)
         .then((res) => {
@@ -37,20 +35,26 @@
             console.log(json);
           });
 
-        function toggleActiveState() {
-            this.classList.toggle('active');
-        }
-        var btns = document.querySelectorAll('.btn');
-        [].forEach.call(btns, function(btn) {
-          btn.addEventListener('click', toggleActiveState, false);
-          
-        });
+          function character() {
+            // SO THAT THE URL CAN HAVE THE NAME INPUT AND ITS VALUE
+            let urlQueryParameters = new URLSearchParams(window.location.search),
+              queryParameterName = urlQueryParameters.get("name"),
+              name = document.getElementById("name").value;
+           
+            if (queryParameterName !== null && queryParameterName !== "") {
+              document.getElementById("name").value = queryParameterName;
+              connection();
+            } else if (name !== null && name !== "") {
+              document
+                .getElementById("connectionForm")
+                .addEventListener("submit", connection);
+                // WORKS ON BOTH CLICK AS WELL AS ENTER EVENT
+            } else {
+              document.getElementById("characterSection").innerHTML =
+                '<h2 id="characterMainTitle">Type Name & Press "ENTER" to get the result....</h2>';
+            }
+          }
         
 
-    //    () => {
-           // var character = document.getElementById('search').value
-          //  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${dstr}&apikey=${apikey}&hash=${passhash}` + results +"results")
-         //   .then(res=> res.json())
-   // .then(result=> console.log("result", result))
     
->>>>>>> f2de73052e3c215355210e817328e079c917ef43
+
