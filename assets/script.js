@@ -50,3 +50,4 @@ fetch(secondurl)
          //   .then(res=> res.json())
    // .then(result=> console.log("result", result))
 
+   //function for show heros depends on search also filter heros depends on key press
