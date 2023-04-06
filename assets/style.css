@@ -25,3 +25,13 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+.card {
+    background-color: #fff;
+    border-radius: 0.50rem;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+}
+
