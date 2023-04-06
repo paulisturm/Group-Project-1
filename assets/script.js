@@ -37,7 +37,7 @@ fetch(secondurl)
 
 
     const charactersearch = () => {
-        let name = "Ant-man"
+        let name = "ant-man"
         var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
         fetch(secondurl).then(function(res){
             return res.json();
@@ -49,6 +49,7 @@ fetch(secondurl)
             let imgele = document.createElement("img")
             imgele.setAttribute("src", imgurl)
             document.body.append(imgele)
+            document.body.append()
         })
     }
     charactersearch();
