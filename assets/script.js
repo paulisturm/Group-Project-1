@@ -35,12 +35,21 @@ fetch(secondurl)
     console.log(json);
   });
 
-  fetch(secondurl)
-  .then((res) => {
-      console.log(res);
-      return res.json();
-    })
-    .then((json) => {
-      console.log(json);
-    });
+
+    const charactersearch = () => {
+        let name = "Ant-man"
+        var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
+        fetch(secondurl).then(function(res){
+            return res.json();
+        })
+        .then(function(json){
+            console.log(json)
+            var imgurl = json.results[0].image.url
+            console.log(imgurl)
+            let imgele = document.createElement("img")
+            imgele.setAttribute("src", imgurl)
+            document.body.append(imgele)
+        })
+    }
+    charactersearch();
 
