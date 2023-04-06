@@ -1,88 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marvel Comics Character Search</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"/>
-    <style>
-    
-    </style>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-  <body>
-    <section class="hero is-danger">
-      <div class="hero-body">
-        <p class="title">
-          Marvel Comics Search
-        </p>
-        <body >
-          <nav class="navbar navbar-expand-lg ">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="Favorites.html">Favorites</a>
-                    </li>
-                  </ul>
-      
-                </div>
-              </div>
-            </nav>
-            
-    <div class="container">
-        <h1 class="header-main-title">Marvel Comics Character Search</h1>
-        <form id="connectionForm">
-          
-          <div class="form-group">
-            <input class="input is-danger" name="name" id="name" type="text" class="form-control character-search-box"s placeholder="Enter Marvel Character..." onkeyup="">
-          </div>
-          <input type="submit" value="Search!" class="button is-dark search-character-button" id="submit">
-        
-        </form>
-        <div id="cards-group"></div>
-      </div>
-
-    </section>
-      <section>
-        <section class="landscape">
-          
-      
-      </section>
-
-    
-    </section>
-    <div>
-    <div class="container" id="contentContainer"></div>
-  
-      <div class="d-flex align-items-center" id="characterSpinnerSection"></div>
-      <div class="d-flex align-items-center" id="comicsSpinnerSection"></div>
-  
-      <section id="characterSection"></section>
-
-      <section id="comicSection"></section> 
-  
-      <br>
-
-
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="container">
+    <a href="./favHeroes.html" class="favorite-heroes"><h2 style="color: red;">My Favorite List</h2></a>
+    <p id="main-heading">Superhero Search</p>
+        </div>
+    <div id="data-container">
+    <input type="search" name="searchHero" id="searchHero" placeholder="Search hero here...">
+    <ul id="searchResults">      
+    </ul>
     </div>
-  </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-
-  <script src="./assets/script.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.34.3/collect.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
- 
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
