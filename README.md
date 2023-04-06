@@ -3,3 +3,4 @@ User will be able to click on the search bar and type in the name of any superhe
 User Story
 
 As a user I want to be able to pass time by searching for my favorite superhero or villian and reading their bio how many comics and movies they have been in.
+![screenshot](./assets/images/Project%20%201%20screenshot.png)

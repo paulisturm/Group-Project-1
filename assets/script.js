@@ -36,8 +36,29 @@ const showCorrespondingHeros = () => {
 
       xhr.open("GET", `https://www.superheroapi.com/api.php/586069776286026/search/${name}`, true);
 
+<<<<<<< HEAD
       xhr.send();
 }
+=======
+
+    const charactersearch = () => {
+        let name = "ant-man"
+        var secondurl = `https://www.superheroapi.com/api.php/6813105332038237/search/${name}`;
+        fetch(secondurl).then(function(res){
+            return res.json();
+        })
+        .then(function(json){
+            console.log(json)
+            var imgurl = json.results[0].image.url
+            console.log(imgurl)
+            let imgele = document.createElement("img")
+            imgele.setAttribute("src", imgurl)
+            document.body.append(imgele)
+            document.body.append()
+        })
+    }
+    charactersearch();
+>>>>>>> d20d6023a95a875e1687f3aff13d6ff93f9ad2d1
 
 // INCASE OF LOAD END
 xhr.onloadend = function() {
